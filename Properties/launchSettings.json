@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NewYoutubeDl": {
+      "commandName": "Project",
+      "commandLineArgs": "https://www.youtube.com/watch?v=wrm3dwT4BHY -a"
+    }
+  }
+}
