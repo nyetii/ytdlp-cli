@@ -45,7 +45,7 @@ namespace youtube
 
             var arguments = new StringBuilder()
                 .AppendSpace(AudioOnly ? @"-f ""ba""" : $@"--audio-multistreams -S ""res:{new string(Quality.Where(char.IsDigit).ToArray())}""")
-                .AppendSpace(!AudioOnly ? $"--merge-output-format {extension}" : string.Empty)
+                .AppendSpace(!AudioOnly && string.IsNullOrWhiteSpace(Extension) ? $"--merge-output-format {extension}" : string.Empty)
                 .AppendSpace($@"-o ""{output}/%(title)s-%(id)s.{extension ?? "%(ext)s"}""")
                 .Append(Url)
                 .ToString();
