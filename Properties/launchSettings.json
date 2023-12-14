@@ -1,8 +1,20 @@
 {
   "profiles": {
-    "NewYoutubeDl": {
+    "Orochinho": {
       "commandName": "Project",
-      "commandLineArgs": "https://www.youtube.com/watch?v=wrm3dwT4BHY -a"
-    }
+      "commandLineArgs": "https://www.youtube.com/watch?v=wrm3dwT4BHY"
+    },
+    "Audio Only": {
+      "commandName": "Project",
+      "commandLineArgs": "https://www.youtube.com/watch?v=VPRjCeoBqrI&pp=ygURc2t5IGZ1bGwgb2Ygc3RhcnM%3D -a"
+    },
+    "Desktop": {
+      "commandName": "Project",
+      "commandLineArgs": "https://www.youtube.com/watch?v=VPRjCeoBqrI&pp=ygURc2t5IGZ1bGwgb2Ygc3RhcnM%3D -o Desktop -e mp4"
+    },
+    "Help": {
+      "commandName": "Project",
+      "commandLineArgs": "--help"
+    } 
   }
 }

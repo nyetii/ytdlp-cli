@@ -12,7 +12,7 @@ namespace youtube
             try
             {
                 await new CliApplicationBuilder()
-                    .SetExecutableName(Assembly.GetEntryAssembly().Location)
+                    .SetExecutableName("youtube")
                     .AddCommandsFromThisAssembly()
                     .Build()
                     .RunAsync();
